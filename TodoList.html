@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <link rel="stylesheet" href="./TodoList.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Check List</h1>
+        <form onsubmit="return false;"> <!--리로드 되는 현상 막음-->
+            <input type="text" id="text_box" autofocus="true" placeholder="Add a List">
+            <button type="submit" id="add_button" class="addBtn"><img src="./images/add_button.svg" width="40px" height="40px"></button>
+        </form> <!--버튼 타입을 submit으로 하면 엔터먹힘-->
+        <div id="itemList"></div>
+    </div>
+</body>
+<script src="./TodoList.js"></script>
+</html>
